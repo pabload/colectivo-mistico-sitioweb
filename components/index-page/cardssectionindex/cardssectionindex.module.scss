@@ -1,0 +1,44 @@
+.mainContainer {
+  padding-top:10vh;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 23vh;
+  background-color: #b4aee8;
+}
+.mainTitle{
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+.svgWave {
+  height: 70%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  height: 50vh;
+  background-color: #440a67;
+  padding: 3%;
+  border-radius: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-style: oblique;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cardInfo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+}
+.svgCards{
+  width: 70%;
+  width: 70%;
+}
+.infoCard {
+}

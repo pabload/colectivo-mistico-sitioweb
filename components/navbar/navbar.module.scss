@@ -1,0 +1,109 @@
+.navContainer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: black;
+  background-color: #440a67;
+  color: white;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logoContainer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  width: 10%;
+  height: 10%;
+}
+.title{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  &:hover{
+    color: #51c2d5;
+  }
+}
+.optionsContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.options {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: #51c2d5;
+  }
+}
+.mobileOptionsContainer {
+  display: none;
+}
+.mobileOptionsSubContainer {
+  height: 50vh;
+  margin-top: 12vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mobileOptions {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  padding: 5%;
+  color: #93329e;
+  border-radius: 23px;
+  &:hover{
+    color: white;
+    background-color: #93329e;
+    border-style: solid;
+  }
+}
+.hamburger {
+  display: none;
+}
+.mobileOptionsContainer {
+  position: fixed;
+  z-index: 2;
+  background-color: #ffe3fe;
+  justify-content: center;
+  margin-top: 10vh;
+  width: 100vw;
+  height: 100vh;
+}
+@media only screen and (max-width: 900px) {
+   .logo{
+     display: none;
+   }
+  .mobileOptionsContainer {
+    position: fixed;
+    z-index: 2;
+    background-color: #ffe3fe;
+    justify-content: center;
+    margin-top: 10vh;
+    width: 100vw;
+    height: 100vh;
+  }
+  .optionsContainer {
+    display: none;
+  }
+  .navicon {
+    display: inline;
+  }
+  .hamburger {
+    display: inline;
+  }
+}

@@ -1,0 +1,91 @@
+.mainContainer {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0vh;
+  background-color: #ffe3fe;
+}
+.mainTitle {
+  padding-top: 12vh;
+  font-size: 5rem;
+  color: rgb(95, 5, 171);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 300px;
+}
+.productContainer {
+  padding-bottom: 300px;
+  width: 100%;
+  height: 100%;
+}
+.productsTitle {
+  font-weight: 900;
+  color: rgb(95, 5, 171);
+  font-size: 6rem;
+}
+.productInfo {
+  text-align: center;
+  font-size: 1.5vw;
+  color:#93329e;
+}
+.productImageContainer {
+    cursor: pointer;
+    position: relative;
+}
+.productImage {
+  width: 100%;
+  height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.imagehoverContainer {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+.productImageContainer:hover .productImage {
+  opacity: 1;
+}
+
+.productImageContainer:hover .imagehoverContainer {
+  opacity: .8;
+}
+@media only screen and (max-width: 900px) {
+  .productsTitle {
+    font-size: 3rem;
+  }
+  .productInfo {
+    font-size: 1.5rem;
+  }
+  .infoProductoContainer{
+      margin-bottom: 200px;
+  }
+  .mainTitle {
+    margin-bottom: 100px;
+  }
+  .mainTitle {
+    font-size: 3rem;
+    width: 100%;
+  }
+  .productImage {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+}
