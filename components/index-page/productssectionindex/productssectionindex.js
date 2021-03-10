@@ -34,6 +34,7 @@ export const Productssectionindex = () => {
         AOS.init({
             duration: 2000
         });
+        AOS.refresh();
     }, []);
     return (
         <section className={Styles.mainContainer}>
