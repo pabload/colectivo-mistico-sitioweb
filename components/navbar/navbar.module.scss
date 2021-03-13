@@ -1,9 +1,7 @@
 .navContainer {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  color: black;
-  background-color: #440a67;
-  color: white;
+  background-color:#440a67;
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -13,6 +11,16 @@
   z-index: 3;
   top: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbarScrolled{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:#440a67;
+  .title{
+    color: white;
+  }
+  .options {
+   color: white;
+  }
 }
 .logoContainer {
   width: 70%;
@@ -25,14 +33,15 @@
   height: 10%;
 }
 .title{
+  color: white;
   cursor: pointer;
   text-decoration: none;
-  color: white;
   &:hover{
     color: #51c2d5;
   }
 }
 .optionsContainer {
+  margin: 0;
   width: 50%;
   display: flex;
   justify-content: space-around;
@@ -40,9 +49,9 @@
   list-style: none;
 }
 .options {
+  color: white;
   list-style: none;
   text-decoration: none;
-  color: white;
   &:hover {
     color: #51c2d5;
   }
@@ -104,6 +113,7 @@
     display: inline;
   }
   .hamburger {
+    color: white;
     display: inline;
   }
 }

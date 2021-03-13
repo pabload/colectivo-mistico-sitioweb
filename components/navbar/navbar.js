@@ -3,11 +3,11 @@ import Link from 'next/link'
 import Styles from './navbar.module.scss'
 import Hamburger from 'hamburger-react'
 import { Animated } from "react-animated-css";
-import Image from 'next/image'
+
 const Navbar = () => {
-  const [mobileOptions, setMobileOptions] = useState(false);
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
   const mobileOptionsContainer = useRef();
+  const navbarContainer = useRef();
   useEffect(() => {
     const onScrenChange = () => {
       if (window.screen.width > 600) {
@@ -15,6 +15,7 @@ const Navbar = () => {
       }
     }
     window.addEventListener('resize', onScrenChange);
+    return 
   })
   useEffect(() => {
     if (isOpen) {
@@ -24,7 +25,7 @@ const Navbar = () => {
   }, [isOpen])
   return (
     <>
-      <nav className={Styles.navContainer}>
+      <nav ref={navbarContainer} className={Styles.navContainer}>
         <div className="container d-flex justify-content-around">
           <div className={Styles.logoContainer}>
           <img className={Styles.logo} src="./assets/logocolectivo.png" alt=""/>
