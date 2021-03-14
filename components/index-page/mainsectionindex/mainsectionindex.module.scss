@@ -1,9 +1,16 @@
 .mainContainer {
+  background-image: url('/assets/backgroundmain-index.jpg');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  overflow: hidden;
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
-  background: #ffe3fe;
+  //background: #ffe3fe;
   justify-content: center;
 }
 .clouds{
@@ -13,17 +20,21 @@
 }
 .mainTitle {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
-  color: #440a67;
+  color: white;
 }
 .subTitle {
+  color: white;
   text-align: center;
   font-size: 1.5rem;
-  color: #440a67;
+  
 }
 .infoContainer {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   color: white;
   position: absolute;
   z-index: 2;
@@ -34,7 +45,7 @@
 .svgWave{
   position: absolute;
   right: 0;
-  height: 100%;
+  width: 70%;
 }
 @media only screen and(max-width: 1000px) {
   .mainTitle {
