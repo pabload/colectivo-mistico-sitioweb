@@ -1,47 +1,30 @@
 import React from 'react'
 import Styles from './cardssectionindex.module.scss'
+import Link from 'next/link'
 export const Cardssectionindex = () => {
     return (
         <section className={Styles.mainContainer}>
-            <div className="container">
-                <h1 className={Styles.mainTitle}>Clientes Satisfechos</h1>
-                <div className="row d-flex justify-content-center align-items-center">
-                    <div data-aos="fade-right" className="col-lg-3 col-9 mb-2">
-                        <div className={Styles.card}>
-                            <div className={Styles.cardInfo}>
-                                <p>"Muy buena variedad de regalos y acessorios"</p>
-                                <p>-Maria Fernandez</p>
-                            </div>
-                         
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className="col-lg-3 col-9 mb-2">
-                        <div className={Styles.card}>
-                        <div className={Styles.cardInfo}>
-                                <p>"Excelentes productos, me gusta que empujan a productores locales"</p>
-                                <p>-Roberto Millan</p>
-                        </div>
-                        
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className="col-lg-3 col-9 mb-2">
-                        <div className={Styles.card}>
-                        <div className={Styles.cardInfo}>
-                                <p>"Ceramica hermosa"</p>
-                                <p>-Jose Lopez</p>
-                        </div>
-                          
-                        </div>
-                    </div>
-                    <div data-aos="fade-right" className="col-lg-3 col-9 mb-2">
-                        <div className={Styles.card}>
-                        <div className={Styles.cardInfo}>
-                                <p>"Snacks buenísimos y nutritivos"</p>
-                                <p>-Laura Torres</p>
-                        </div>
-                        </div>
+            <h1 className={Styles.mainTitle}>En colectivo místico apoyamos</h1>
+            <div className="row justify-content-center">
+                <div className="col-lg-3 col-8 mb-5">
+                    <div className={Styles.card}>
+                        <img className={Styles.imageCard} src="./assets/artcard-image.svg" alt="" />
+                        <h2 className={Styles.cardTitle}>Arte</h2>
                     </div>
                 </div>
+                <div className="col-lg-3 col-8  mb-5">
+                    <img className={Styles.imageCard} src="./assets/creativitycard-image.svg" alt="" />
+                    <h2 className={Styles.cardTitle}>cretividad</h2>
+                </div>
+                <div className="col-lg-3 col-8  mb-5">
+                    <img className={Styles.imageCard} src="./assets/talentcard-image.svg" alt="" />
+                    <h2 className={Styles.cardTitle}>talento</h2>
+                </div>
+            </div>
+            <div className=" d-flex justify-content-center">
+                <Link href="/contacto">
+                    <a className={`rounded-pill ${Styles.contactButton}`}>¡ Quiero colaborar!</a>
+                </Link>
             </div>
         </section>
     )

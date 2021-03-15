@@ -1,0 +1,57 @@
+.mainContainer {
+  background-color: #ffe3fe;
+  padding: 4%;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.articlecard {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imageContainer {
+    cursor: pointer;
+    overflow: hidden;
+}
+.articleImage {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+  &:hover{
+    transform: scale(1.5);
+  }
+}
+.articleInfo {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articleTitle {
+  font-weight: 600;
+}
+.articleDescription {
+}
+.articleMeta {
+  font-size: 0.9rem;
+}
+.mainarticle {
+  display: flex;
+  .articleImage {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainarticle {
+    display: inherit;
+    .articleImage {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

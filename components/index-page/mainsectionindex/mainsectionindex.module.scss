@@ -56,8 +56,8 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .clouds{
-    height: 10%;
+  .mainContainer {
+    background-attachment: inherit;
   }
   .mainTitle {
     font-size: 3rem;

@@ -3,7 +3,7 @@ import Styles from './footer.module.scss'
 export const Footer = () => {
     return (
         <footer className={Styles.mainContainer}>
-            <h2>footer</h2>
+            <h1 className={Styles.mainTitle}>©2021 Colectivo Místico</h1>
         </footer>
     )
 }

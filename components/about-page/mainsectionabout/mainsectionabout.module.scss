@@ -1,6 +1,6 @@
 .mainContainer {
-  background-image: url("/assets/background-about.jpg");
-  background-size: 100% 100%;
+  background-image: url("/assets/backgroundlocation-about.jpg");
+  //background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 }
 .mainTitle {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 900;
   text-align: center;
   color: white;
   margin-bottom: 4%;
@@ -30,7 +30,7 @@
 }
 @media only screen and (max-width: 900px) {
   .mainContainer {
-    height: auto;
+    background-attachment: inherit;
   }
   .mainTitle {
     font-size: 3rem;

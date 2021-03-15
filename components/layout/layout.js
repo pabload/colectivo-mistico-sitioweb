@@ -7,7 +7,6 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Colectivo Mistico</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossOrigin="anonymous"></link>
@@ -16,6 +15,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <div className={styles.contetcontainer}>
         {children}
+        <Footer/>
       </div>
     </>
   )

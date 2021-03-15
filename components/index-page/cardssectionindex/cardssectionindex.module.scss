@@ -1,10 +1,14 @@
 .mainContainer {
-  padding-top:10vh;
+  //background-image: url('/assets/background-cards.jpg');
+  background-size: 100% 100%;
+  padding-top:5%;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 23vh;
   background-color: #b4aee8;
 }
 .mainTitle{
+  font-size: 4rem;
+  font-weight: 600;
   color: white;
   margin-bottom: 2vh;
   text-align: center;
@@ -16,27 +20,38 @@
   z-index: 1;
 }
 .card {
-  position: relative;
-  overflow: hidden;
+  padding: 4%;
+  width: 100%;
+  height: 100%;
+}
+.imageCard{
+  width: 100%;
+  height: 100%;
+}
+.cardTitle{
   color: white;
-  height: 50vh;
-  background-color: #440a67;
-  padding: 3%;
-  border-radius: 25px;
-  display: flex;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-style: oblique;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.cardInfo{
-  color: black;
+.contactButton{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 6%;
+  padding: 1.4%;
+  width: 30%;
+  height: 100%;
+  font-size: 1.2rem;
+  background-color:#93329e;
+  &:hover{
+    background-color: #ffe3fe;
+    color:#93329e;
+  }
 }
-.svgCards{
-  width: 70%;
-  width: 70%;
-}
-.infoCard {
+@media only screen and (max-width: 600px) {
+  .contactButton{
+    width: 70%;
+  }
+  .mainTitle{
+    font-size: 3rem;
+  }
 }

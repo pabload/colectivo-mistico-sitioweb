@@ -12,6 +12,7 @@
     "bootstrap": "^5.0.0-beta2",
     "hamburger-react": "^2.4.0",
     "next": "10.0.7",
+    "next-seo": "^4.20.0",
     "react": "17.0.1",
     "react-animated-css": "^1.2.1",
     "react-card-carousel": "^1.1.3",
