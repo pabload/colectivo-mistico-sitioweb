@@ -10,7 +10,7 @@ const Index = () => {
     <>
       <NextSeo
         title="Tienda de regalos, productos artesanales, obras de arte, joyería de acero inoxidable | Colectivo místico "
-        description="Visita la tienda con los mejores regalos, obras de arte, cerámica, joyería de acero inoxidable y mas– en Colectivo místico encontraras las mejores propuestas de los mejores talentos de Sinaloa "
+        description="Visita la tienda con los mejores regalos,obras de arte, cerámica, joyería de acero inoxidable y mas– en Colectivo místico encontraras las mejores propuestas de los mejores talentos de Sinaloa "
       />
       <Layout>
         <Mainsectionindex />
