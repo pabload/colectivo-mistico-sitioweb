@@ -1,22 +1,17 @@
 .mainContainer {
-  background-image: url('/assets/backgroundmain-index.jpg');
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
   width: 100vw;
   height: 100vh;
-  //background: #ffe3fe;
   justify-content: center;
 }
-.clouds{
-  width: 100%;
-  height: 15%;
-  
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
 }
 .mainTitle {
   font-weight: 900;
@@ -56,9 +51,6 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .mainContainer {
-    background-attachment: inherit;
-  }
   .mainTitle {
     font-size: 3rem;
   }

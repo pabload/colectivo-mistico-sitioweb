@@ -1,10 +1,18 @@
 import React from 'react'
 import Styles from './mainsectionarticles.module.scss'
+import Image from 'next/image'
 const Articlecard = ({ mainarticle }) => {
     return (
         <div className={`${Styles.articlecard} ${mainarticle ? Styles.mainarticle : null}`}>
             <div className={Styles.imageContainer}>
-                <img className={Styles.articleImage} src="https://cdn.pixabay.com/photo/2013/10/25/20/46/mosaic-200864_1280.jpg" alt="" />
+                <Image
+                    alt="article-image"
+                    src="https://cdn.pixabay.com/photo/2013/10/25/20/46/mosaic-200864_1280.jpg"
+                    layout="intrinsic"
+                    width={870}
+                    height={811}
+                    className={Styles.articleImage}
+                />
             </div>
             <div className={Styles.articleInfo}>
                 <h2 className={Styles.articleTitle}>Titulo del articulo</h2>

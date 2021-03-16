@@ -15,7 +15,7 @@
 }
 .imageContainer {
     cursor: pointer;
-    overflow: hidden;
+    padding: 1%;
 }
 .articleImage {
   width: 100%;
@@ -42,9 +42,7 @@
 }
 .mainarticle {
   display: flex;
-  .articleImage {
-    height: auto;
-  }
+ 
 }
 @media only screen and (max-width: 600px) {
   .mainarticle {

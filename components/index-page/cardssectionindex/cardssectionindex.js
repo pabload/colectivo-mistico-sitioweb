@@ -1,23 +1,42 @@
 import React from 'react'
 import Styles from './cardssectionindex.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
 export const Cardssectionindex = () => {
     return (
         <section className={Styles.mainContainer}>
             <h1 className={Styles.mainTitle}>En colectivo místico apoyamos</h1>
             <div className="row justify-content-center">
-                <div className="col-lg-3 col-8 mb-5">
+                <div className="col-lg-3  col-8 mb-5">
                     <div className={Styles.card}>
-                        <img className={Styles.imageCard} src="./assets/artcard-image.svg" alt="" />
+                        <Image
+                            alt="Mountains"
+                            src="/assets/artcard-image.svg"
+                            layout="responsive"
+                            width={870}
+                            height={811}
+                        />
                         <h2 className={Styles.cardTitle}>Arte</h2>
                     </div>
                 </div>
                 <div className="col-lg-3 col-8  mb-5">
-                    <img className={Styles.imageCard} src="./assets/creativitycard-image.svg" alt="" />
+                    <Image
+                        alt="Mountains"
+                        src="/assets/creativitycard-image.svg"
+                        layout="responsive"
+                        width={870}
+                        height={811}
+                    />
                     <h2 className={Styles.cardTitle}>cretividad</h2>
                 </div>
                 <div className="col-lg-3 col-8  mb-5">
-                    <img className={Styles.imageCard} src="./assets/talentcard-image.svg" alt="" />
+                    <Image
+                        alt="Mountains"
+                        src="/assets/talentcard-image.svg"
+                        layout="responsive"
+                        width={870}
+                        height={811}
+                    />
                     <h2 className={Styles.cardTitle}>talento</h2>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Styles from './infosectionabout.module.scss'
+import Image from 'next/image'
 const Infosectionabout = () => {
     return (
         <section className={Styles.mainContainer}>
@@ -10,7 +11,13 @@ const Infosectionabout = () => {
                     <p className={Styles.textInfo}>Somos una empresa distribuidora de productos de todo tipo, provenientes de muchos emprendedores locales con el fin de promover la calidad y el talento de nuestra ciudad, ofrecemos desde joyería, accesorios, cosmética, productos artesanales, Snacks y muchas más propuestas. </p>
                 </div>
                 <div className="col-lg-6">
-                  <img className={Styles.svgInfo} src="./assets/svginfoabout.svg" alt=""/>
+                    <Image
+                        alt="product1"
+                        src="/assets/svginfoabout.svg"
+                        layout="responsive"
+                        width={662}
+                        height={647}
+                    />
                 </div>
             </div>
 
