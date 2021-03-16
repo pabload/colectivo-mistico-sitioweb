@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <link rel="shortcut icon"    href="/favicon.ico" />
-        <meta name="google-site-verification" content="8gytC6GBrAXSqWamQP51Sf-Cwsg6fiyL7UdipkGliVA" />
+        <meta name="google-site-verification" content="YKC1bJGY1gQF-23XY_L4FvA68LQuOVE96Fwq4NYeqhA" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossOrigin="anonymous"></link>
