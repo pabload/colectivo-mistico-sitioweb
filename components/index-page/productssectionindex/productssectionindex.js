@@ -45,7 +45,7 @@ export const Productssectionindex = () => {
                 <h1 className={Styles.mainTitle}>Encuentra los mejores productos</h1>
                 <div className={`row ${Styles.productContainer} `}>
                     <div data-aos="fade-right" className={`col-lg-6 d-flex flex-column justify-content-center align-items-center ${Styles.infoProductoContainer}`}>
-                        <h2 className={Styles.productsTitle}>Joyeria</h2>
+                        <h2 className={Styles.productsTitle}>Joyería</h2>
                         <p className={Styles.productInfo}>
                             Encuentra la mejor joyería de acero inoxidable
                         </p>

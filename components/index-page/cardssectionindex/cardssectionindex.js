@@ -27,7 +27,7 @@ export const Cardssectionindex = () => {
                         width={870}
                         height={811}
                     />
-                    <h2 className={Styles.cardTitle}>cretividad</h2>
+                    <h2 className={Styles.cardTitle}>Cretividad</h2>
                 </div>
                 <div className="col-lg-3 col-8  mb-5">
                     <Image
@@ -37,7 +37,7 @@ export const Cardssectionindex = () => {
                         width={870}
                         height={811}
                     />
-                    <h2 className={Styles.cardTitle}>talento</h2>
+                    <h2 className={Styles.cardTitle}>Talento</h2>
                 </div>
             </div>
             <div className=" d-flex justify-content-center">
