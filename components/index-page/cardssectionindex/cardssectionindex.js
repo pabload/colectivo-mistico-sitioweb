@@ -10,7 +10,7 @@ export const Cardssectionindex = () => {
                 <div className="col-lg-3  col-8 mb-5">
                     <div className={Styles.card}>
                         <Image
-                            alt="Mountains"
+                            alt="cart-image"
                             src="/assets/artcard-image.svg"
                             layout="responsive"
                             width={870}
@@ -21,7 +21,7 @@ export const Cardssectionindex = () => {
                 </div>
                 <div className="col-lg-3 col-8  mb-5">
                     <Image
-                        alt="Mountains"
+                        alt="cart-image"
                         src="/assets/creativitycard-image.svg"
                         layout="responsive"
                         width={870}
@@ -31,7 +31,7 @@ export const Cardssectionindex = () => {
                 </div>
                 <div className="col-lg-3 col-8  mb-5">
                     <Image
-                        alt="Mountains"
+                        alt="cart-image"
                         src="/assets/talentcard-image.svg"
                         layout="responsive"
                         width={870}

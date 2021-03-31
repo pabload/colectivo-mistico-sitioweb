@@ -1,0 +1,19 @@
+.mainContainer{
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffe3fe;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spinner{
+    width: 90px;
+    height: 90px;
+    color: #93329e;
+    margin-bottom: 10px;
+}
+.text{
+    color: #440a67;
+}

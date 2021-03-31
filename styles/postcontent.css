@@ -1,0 +1,31 @@
+/****POST STYLES***/
+blockquote{
+  padding: 2%;
+  border-left: solid;
+  border-color: #93329e;
+}
+.kg-card, .kg-image-card, .kg-card-hascaption{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.kg-image{
+  width: 100%;
+  height: 100%;
+}
+.kg-gallery-row{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.kg-gallery-image{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 2%;
+  margin-bottom: 2%;
+  background-color: red;
+}
+.kg-gallery-image > img {
+  width: 100%;
+  height: 100%;
+}

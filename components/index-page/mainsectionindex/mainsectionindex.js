@@ -7,7 +7,7 @@ export const Mainsectionindex = () => {
         <main className={Styles.mainContainer}>
             <div className={Styles.bgWrap}>
                 <Image
-                    alt="Mountains"
+                    alt="backgroundmain"
                     src="/assets/backgroundmain-index.jpg"
                     layout="fill"
                     objectFit="cover"

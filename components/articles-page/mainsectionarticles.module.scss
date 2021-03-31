@@ -1,9 +1,11 @@
 .mainContainer {
+  min-height: 100vh;
   background-color: #ffe3fe;
   padding: 4%;
   width: 100vw;
   font-family: "Montserrat", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .articlecard {
@@ -34,15 +36,32 @@
 }
 .articleTitle {
   font-weight: 600;
+  color: black;
+  text-decoration: none;
+  &:hover{
+    color: #93329e;
+  }
 }
 .articleDescription {
 }
 .articleMeta {
   font-size: 0.9rem;
+  margin-left: 1%;
 }
 .mainarticle {
   display: flex;
  
+}
+
+/****pagination****/
+.paginationNumbers{
+  padding: 1%;
+  margin-left: 2px;
+  text-decoration: none;
+  color: black;
+}
+.currentPage{
+  border-bottom: solid;
 }
 @media only screen and (max-width: 600px) {
   .mainarticle {

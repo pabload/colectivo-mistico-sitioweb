@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Styles from './navbar.module.scss'
 import Hamburger from 'hamburger-react'
 import { Animated } from "react-animated-css";
-
+import Image from 'next/image'
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const mobileOptionsContainer = useRef();
@@ -15,7 +15,7 @@ const Navbar = () => {
       }
     }
     window.addEventListener('resize', onScrenChange);
-    return 
+    return
   })
   useEffect(() => {
     if (isOpen) {
@@ -28,9 +28,9 @@ const Navbar = () => {
       <nav ref={navbarContainer} className={Styles.navContainer}>
         <div className="container d-flex justify-content-around">
           <div className={Styles.logoContainer}>
-          <img className={Styles.logo} src="./assets/logocolectivo.png" alt=""/>
+            <Image alt="logo" layout="intrinsic" width={60} height={60} src="/assets/logocolectivo.png" alt="" />
             <h1 className="animate__animated', 'animate__fadeInDown">
-            <Link href="/">
+              <Link href="/">
                 <a className={Styles.title}>Colectivo Místico</a>
               </Link>
             </h1>
@@ -47,7 +47,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/articulos">
+            <Link href="/articulos" as={`/articulos/${1}`}>
                 <a className={Styles.options}> Artículos</a>
               </Link>
             </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
       </nav>
       <div ref={mobileOptionsContainer} className={Styles.mobileOptionsContainer}>
         <div className={Styles.mobileOptionsSubContainer}>
-        <Link href="/">
+          <Link href="/">
             <a className={Styles.mobileOptions}>Inicio</a>
           </Link>
           <Link href="/sobre-nosotros">
