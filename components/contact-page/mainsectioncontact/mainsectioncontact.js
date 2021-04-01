@@ -36,7 +36,7 @@ const Mainsectioncontact = () => {
                         <div className={Styles.formContainer}>
                             <form onSubmit={validateFields}>
                                 <h3 className={Styles.formTitle}>Envíanos un correo</h3>
-                                {
+                                 {
                                     state.submitting ?
                                         <div className={Styles.boxAlert}>
                                             <div className={`spinner-border ${Styles.spinner}`} role="status">
