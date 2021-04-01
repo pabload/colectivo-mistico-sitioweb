@@ -14,7 +14,7 @@ export const getPosts = async (page) => {
             contentError: 'no page found'
         }
     }
-    const res = await api.posts.browse({ page: pageNumber, fields: [postsQuery] })
+    const res = await api.posts.browse({ page: pageNumber, fields: [postsQuery],include:['authors'] })
     if (page > res.meta.pagination.pages || page == 0) {
         return {
             contentError: 'no page found'
@@ -28,7 +28,8 @@ export const getPosts = async (page) => {
 }
 export const getPost = async (slug) => {
     try {
-        const res = await api.posts.read({ slug: slug })
+        const res = await api.posts.read({slug: slug },{include:'authors'})
+    
         return {
             post: res
         }

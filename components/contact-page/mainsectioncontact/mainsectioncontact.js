@@ -4,12 +4,13 @@ import { useForm, ValidationError } from '@formspree/react';
 const Mainsectioncontact = () => {
     const [state, handleSubmit] = useForm("xrgrzwyr");
     const [formError, setformError] = useState(false);
-    const [formSuccess, setformSuccess] = useState(false);
+    const [hideBoxalert, setHideBoxalert] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const validateFields = async(e) => {
+    const validateFields = async (e) => {
+        setformError(false);
         e.preventDefault();
         if (name == '' || email == '' || subject == '' || message == '') {
             return setformError(true);
@@ -20,6 +21,11 @@ const Mainsectioncontact = () => {
         setSubject('');
         setMessage('');
     }
+    useEffect(() => {
+        if (state.succeeded && !state.submitting) {
+
+        }
+    }, [state])
     return (
         <section className={Styles.mainContainer}>
             <div className={`container ${Styles.contentContainer}`}>
@@ -37,14 +43,14 @@ const Mainsectioncontact = () => {
                                                 <span className="sr-only"></span>
                                             </div>
                                         </div>
-                                        : state.succeeded ?
+                                        : formError ?
                                             <div className={Styles.boxAlert}>
-                                                Mensaje enviado
+                                                Debes de llenar todos los campos
                                             </div>
-                                            : formError ?
+                                            : state.succeeded ?
                                                 <div className={Styles.boxAlert}>
-                                                    Debes de llenar todos los campos
-                                                </div>
+                                                    Mensaje enviado
+                                            </div>
                                                 : null
 
                                 }
