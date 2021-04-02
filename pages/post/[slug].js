@@ -12,7 +12,8 @@ export const getStaticProps = async ({ params }) => {
         props: {
             post: post ? post : null,
             error: error ? error : null
-        }
+        },
+        revalidate: 1
     };
 }
 export const getStaticPaths = () => {
