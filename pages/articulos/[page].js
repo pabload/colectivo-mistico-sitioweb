@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import DefaultErrorPage from 'next/error'
 import { useRouter } from 'next/router'
 import Mainsectionarticles from '../../components/articles-page/mainsectionarticles'
 import Layout from '../../components/layout/layout'

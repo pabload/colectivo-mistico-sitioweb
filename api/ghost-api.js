@@ -34,7 +34,6 @@ export const getPost = async (slug) => {
             post: res
         }
     } catch (error) {
-        console.log('holaaa');
         return {
             error: true
         }

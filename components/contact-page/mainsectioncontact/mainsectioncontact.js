@@ -4,7 +4,6 @@ import { useForm, ValidationError } from '@formspree/react';
 const Mainsectioncontact = () => {
     const [state, handleSubmit] = useForm("xrgrzwyr");
     const [formError, setformError] = useState(false);
-    const [hideBoxalert, setHideBoxalert] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');

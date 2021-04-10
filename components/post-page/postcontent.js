@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Styles from './postcontent.module.scss'
 import Image from 'next/image'
-const disUrl = process.env.DIS_URL;
 const PostContent = ({ content }) => {
     const [enableLoadComments, setEnableLoadComments] = useState(true);
     const loadComments = () => {

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link'
 import Styles from './navbar.module.scss'
 import Hamburger from 'hamburger-react'
-import { Animated } from "react-animated-css";
 import Image from 'next/image'
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);

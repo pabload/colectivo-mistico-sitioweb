@@ -19,7 +19,6 @@ const Brandssectionabout = () => {
                     <Brandimage  href={"https://www.instagram.com/lucianajewelry/"} src={"/assets/lucianabrand-about.jpg"}/>
                     <Brandimage  href={"https://www.instagram.com/leonelacrochetandcrafts/"} src={"/assets/leonelabrand-about.jpg"}/>
                     <Brandimage  href={"https://www.instagram.com/hubbyssox/"} src={"/assets/hubbybrand-about.jpg"}/>
-                    {/*<Brandimage  href={"https://www.instagram.com/joyeria_aryabymaly/"} src={"/assets/aryabrand-about.jpg"}/>*/}
                     <Brandimage  href={"https://www.instagram.com/soybenditopecado/"} src={"/assets/benditopecadobrand-about.jpg"}/>
                     <Brandimage  href={"https://www.instagram.com/zera.semillas/"} src={"/assets/zerabrand-about.jpg"}/>
                 </div>
