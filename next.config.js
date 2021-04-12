@@ -1,4 +1,5 @@
 module.exports = {
+    generateEtags: false,
     images: {
         domains: [
             'assets.example.com'

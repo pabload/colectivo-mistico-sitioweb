@@ -9,7 +9,6 @@ import Mainsection404 from '../../components/notfound-page/mainsection404'
 export const getStaticProps = async ({ params }) => {
   const { page } = params;
   const { posts, numPages, contentError } = await apiService.getPosts(page);
-  console.log('server side');
   return {
     props: {
       posts: posts ? posts : null,
@@ -17,7 +16,7 @@ export const getStaticProps = async ({ params }) => {
       contentError: contentError,
       currentPage: page ? page : null
     },
-    revalidate: 1
+    revalidate: 10
   };
 }
 export const getStaticPaths = () => {
@@ -37,6 +36,7 @@ const Articulos = (props) => {
       <NextSeo
         title='¡Oops pagina no encontrada !'
         description='No se encontró la pagina solicitada '
+        
       />
       <Mainsection404 />
     </>

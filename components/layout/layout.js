@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <link rel="shortcut icon"    href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="google-site-verification" content="YKC1bJGY1gQF-23XY_L4FvA68LQuOVE96Fwq4NYeqhA" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
