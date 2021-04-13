@@ -15,7 +15,7 @@ export const getPosts = async (page) => {
         }
     }
     const res = await api.posts.browse({ page: pageNumber, fields: [postsQuery],include:['authors'] })
-    if (page > res.meta.pagination.pages || page == 0) {
+    if (page > res.meta.pagination.pages || page == 0||res.length==0) {
         return {
             contentError: 'no page found'
         }
