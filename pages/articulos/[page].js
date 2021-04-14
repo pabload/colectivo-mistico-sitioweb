@@ -16,7 +16,7 @@ export const getStaticProps = async ({ params }) => {
       contentError: contentError,
       currentPage: page ? page : null
     },
-    revalidate: 10
+    revalidate: 1
   };
 }
 export const getStaticPaths = () => {
