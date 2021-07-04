@@ -7,6 +7,7 @@ const Mainsection404 = () => {
         <Layout>
             <main className={Styles.mainContainer}>
                 <h1 className={Styles.textStyle}>¡Oops pagina no encontrada !</h1>
+                <h3 className={Styles.textStyle}>Posiblemente la página que buscas no existe prueba recargando otra vez </h3>
                 <Image
                     alt="backgroundmain"
                     src="/assets/error404.svg"

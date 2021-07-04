@@ -29,7 +29,6 @@ export const getPosts = async (page) => {
 export const getPost = async (slug) => {
     try {
         const res = await api.posts.read({slug: slug },{include:'authors'})
-    
         return {
             post: res
         }

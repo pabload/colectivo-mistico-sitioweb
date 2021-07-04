@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 import * as apiService from '../../api/ghost-api';
 import Loading from '../../components/loading/loading'
 import Mainsection404 from '../../components/notfound-page/mainsection404'
-export const getStaticProps = async ({ params }) => {
+/*export const getStaticProps = async ({ params }) => {
   const { page } = params;
   const { posts, numPages, contentError } = await apiService.getPosts(page);
   return {
@@ -16,7 +16,7 @@ export const getStaticProps = async ({ params }) => {
       contentError: contentError,
       currentPage: page ? page : null
     },
-    revalidate: 1
+    revalidate: 10
   };
 }
 export const getStaticPaths = () => {
@@ -24,6 +24,21 @@ export const getStaticPaths = () => {
     paths: [],
     fallback: true,
   }
+}*/
+
+// This gets called on every request
+export async function getServerSideProps({ params }) {
+  console.log('se vuelve a llamar');
+  const { page } = params;
+  const { posts, numPages, contentError } = await apiService.getPosts(page);
+  return {
+    props: {
+      posts: posts ? posts : null,
+      numPages: numPages ? numPages : null,
+      contentError: contentError,
+      currentPage: page ? page : null
+    },
+  };
 }
 const Articulos = (props) => {
   const { posts, numPages, contentError, currentPage } = props;
@@ -38,7 +53,7 @@ const Articulos = (props) => {
         description='No se encontró la pagina solicitada '
         
       />
-      <Mainsection404 />
+      <Mainsection404  />
     </>
   }
   return (

@@ -126,7 +126,7 @@ const Mainsectioncontact = () => {
                                 </div>
                                 <div className="d-flex flex-column text-center p-2">
                                     <i className={`fas fa-phone ${Styles.contactIcon}`}></i>
-                                    668 102 4995
+                                    668 885 2921
                                 </div>
                                 <div className="d-flex flex-column text-center p-2">
                                     <i className={`fas fa-envelope ${Styles.contactIcon}`}></i>
