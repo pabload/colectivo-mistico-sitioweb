@@ -6,7 +6,7 @@ import { NextSeo } from 'next-seo';
 import * as apiService from '../../api/ghost-api';
 import Loading from '../../components/loading/loading'
 import Mainsection404 from '../../components/notfound-page/mainsection404'
-/*export const getStaticProps = async ({ params }) => {
+export const getStaticProps = async ({ params }) => {
   const { page } = params;
   const { posts, numPages, contentError } = await apiService.getPosts(page);
   return {
@@ -24,10 +24,10 @@ export const getStaticPaths = () => {
     paths: [],
     fallback: true,
   }
-}*/
+}
 
 // This gets called on every request
-export async function getServerSideProps({ params }) {
+/*export async function getServerSideProps({ params }) {
   console.log('se vuelve a llamar');
   const { page } = params;
   const { posts, numPages, contentError } = await apiService.getPosts(page);
@@ -39,7 +39,7 @@ export async function getServerSideProps({ params }) {
       currentPage: page ? page : null
     },
   };
-}
+}*/
 const Articulos = (props) => {
   const { posts, numPages, contentError, currentPage } = props;
   const router = useRouter();
